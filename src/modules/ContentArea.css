@@ -1,0 +1,56 @@
+.contentItemContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contentContainerTextWrapperLeft {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contentContainerTextWrapperRight {
+    display: flex;
+    order: 2;
+    width: 100%;
+    justify-content: center;
+}
+.contentContainerTextWrapperLeft img, .contentContainerTextWrapperRight img {
+    align-self: flex-start;
+    padding-right: 21px;
+
+}
+.contentContainerTextWrapperLeft div, .contentContainerTextWrapperRight div {
+    align-self: flex-start;
+}
+.contentContainerHeader {
+    margin: 0;
+    width: 269px;
+    height: auto;
+    color: #555559;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+}
+.contentContainerPhoto {
+    width: 100%
+}
+.contentContainerLine {
+    padding-top: 15px;
+}
+.contentContainerImgWrapper {
+    min-width: 50%;
+}
+.contentContainerText {
+    padding-top: 32px;
+    width: 436px;
+    height: 67px;
+    color: #555559;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23.97px;
+    letter-spacing: -0.72px;
+    margin: 0;
+}

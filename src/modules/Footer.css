@@ -1,0 +1,19 @@
+.siteFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efefef;
+    height: 76px;
+}
+.siteFooter p {
+    color: #555559;
+}
+.siteFooter ul {
+    list-style-type: none;
+    display: flex;
+}
+.siteFooter ul li a {
+    color: #555559;
+    border-left: 1px solid #555559;
+    margin: 0 10px 0 10px;
+}
