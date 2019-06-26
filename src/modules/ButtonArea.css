@@ -7,9 +7,10 @@
     padding: 115px 0 173px 0;
     background-color: #fbfafa;
 }
+
 .buttonAreaText {
     margin-top: 36px;
-    width: 840px;
+    max-width: 840px;
     height: auto;
     color: #555559;
     font-size: 56px;
@@ -18,10 +19,11 @@
     text-align: center;
     font-family: "Open Sans";
 }
+
 .buttonAreaBtn {
     border-radius: 6px;
     margin-top: 80px;
-    width: 310px;
+    max-width: 310px;
     height: 65px;
     background-color: #286782;
     color: #ffffff;
@@ -30,4 +32,20 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: -0.8px;
+    padding: 0 38px 0 33px;
+}
+
+@media screen and (max-width: 768px) {
+    .buttonArea {
+        padding: 25px 0 25px 0;
+    }
+
+    .buttonAreaText {
+        margin-top: 15px;
+        font-size: 8vw;
+    }
+
+    .buttonAreaBtn {
+    margin-top: 15px;
+    }
 }

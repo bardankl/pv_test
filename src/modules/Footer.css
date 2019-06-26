@@ -3,17 +3,41 @@
     justify-content: space-between;
     align-items: center;
     background-color: #efefef;
-    height: 76px;
+    min-height: 76px;
 }
 .siteFooter p {
     color: #555559;
+    margin-left: 20px;
 }
 .siteFooter ul {
     list-style-type: none;
     display: flex;
+    margin-right: 20px;
 }
 .siteFooter ul li a {
     color: #555559;
-    border-left: 1px solid #555559;
     margin: 0 10px 0 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .siteFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .siteFooter ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .siteFooter ul li  {
+        text-align: center;
+        margin: 3px 0 3px 0;
+    }
+    .siteFooter nav {
+        order: -1;
+    }
 }

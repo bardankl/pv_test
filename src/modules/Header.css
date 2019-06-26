@@ -5,6 +5,7 @@
     position: relative;
     width: 100%;
 }
+
 .headerItemInstagram {
     color: #ffffff;
     position: absolute;
@@ -16,6 +17,7 @@
     position: relative;
     padding-top: 35%; /* 16:9 Aspect Ratio 56.25%*/
 }
+
 #headerContainerImg {
     position: absolute;
     left: 0;
@@ -37,28 +39,34 @@
     grid-auto-flow: row;
 
 }
+
 .headerContainerBlackOut {
     position: absolute;
     top: 0;
     width: 100%;
 }
+
 .headerItemInstagram {
     display: flex;
     flex-direction: row;
 }
+
 .headerItemInstagram > p {
     margin-left: 6px;
 }
 
 #page-nav {
-    width: auto;
+
     box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.11);
     position: relative;
     background: #ffffff;
+
 }
+
 #page-nav label, #hamburger {
     display: none;
 }
+
 #page-nav ul {
     list-style-type: none;
     margin: 0;
@@ -67,12 +75,15 @@
     justify-content: center;
     align-items: center;
     min-height: 100px;
+    z-index: 55;
 }
+
 #page-nav ul li {
     display: inline-block;
     margin-right: 78px;
     box-sizing: border-box;
 }
+
 #page-nav ul li a {
     text-decoration: none;
     width: 113px;
@@ -85,9 +96,20 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+#page-nav ul li a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
+    #containerHeader {
+        position: relative;
+    }
 
     #page-nav label {
+        position: absolute;
+        left: 0;
+        bottom: 0;
         display: inline-block;
         color: #fff;
         background: #2e2e2e;
@@ -96,16 +118,34 @@
         padding: 10px;
     }
 
+    .invisible {
+        display: none;
+    }
+
+    #page-nav {
+        background-color: rgb(246, 245, 245)
+    }
+
     #page-nav ul li {
         display: block;
     }
 
-
     #page-nav ul {
         display: none;
+        position: absolute;
+        background-color: #fefefe;
+        opacity: 0.7;
     }
 
     #page-nav input:checked ~ ul {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .visible {
         display: block;
     }
 }
